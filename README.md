@@ -14,9 +14,11 @@ This is the first version of the pipeline, mainly showcasing the core principles
 This is a document description primarily covering each step of the search process. In our pipeline, we first perform a harmonic search for physical waveforms, followed by a semi-coherent search for phenomenological waveforms, and finally, parameter inversion from phenomenological waveforms to physical waveforms.
 
 files:
-physics_harmonic_detect： harmonic search for physical waveforms
-phenomenological_waveform_search: A semi-coherent search for phenomenological waveforms
-fit_para_to_physics_para: parameter inversion from phenomenological waveforms to physical waveforms
+**physics_harmonic_detect**： harmonic search for physical waveforms
+
+**phenomenological_waveform_search**: A semi-coherent search for phenomenological waveforms
+
+**fit_para_to_physics_para**: parameter inversion from phenomenological waveforms to physical waveforms
 
 
 
