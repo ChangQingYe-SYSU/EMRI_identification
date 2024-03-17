@@ -81,7 +81,7 @@ if __name__=="__main__":
     len_segment = len(Time_observation)
     
     len_M = 100
-    len_e = 10
+    len_e = 50
     len_mu = 10
     len_p = 100
     
@@ -92,7 +92,7 @@ if __name__=="__main__":
     j = 0
     t0 = time.time()
     # pool = Pool(processes=150)
-    array_log_M = np.linspace(5.85, 6.17,len_M)
+    array_log_M = np.linspace(5.98, 6.04,len_M)
     num_tasks = 50
     
     for i_m in range(len_M):
@@ -102,9 +102,9 @@ if __name__=="__main__":
         j = j + 1
         pool_list = []
         pool = multiprocessing.Pool(processes=num_tasks)
-        for mu in np.linspace(5, 15,len_mu):
-            for e in np.linspace(0.0, 0.7,len_e):
-                for p in  np.linspace(7.68, 9.48,len_p):     
+        for mu in np.linspace(8, 13,len_mu):
+            for e in np.linspace(0, 0.4,len_e):
+                for p in  np.linspace(7.9, 8.9,len_p):     
                     pool_list.append(pool.apply_async(physcis_to_fit, (array_log_M[j],mu,e,p)))
                     
         # 所有任务提交给池后，关闭池，不允许添加新任务
