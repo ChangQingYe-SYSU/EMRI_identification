@@ -103,7 +103,7 @@ if __name__=="__main__":
         pool_list = []
         pool = multiprocessing.Pool(processes=num_tasks)
         for mu in np.linspace(5, 15,len_mu):
-            for e in np.linspace(0.15, 0.3,len_e):
+            for e in np.linspace(0.0, 0.7,len_e):
                 for p in  np.linspace(7.68, 9.48,len_p):     
                     pool_list.append(pool.apply_async(physcis_to_fit, (array_log_M[j],mu,e,p)))
                     
