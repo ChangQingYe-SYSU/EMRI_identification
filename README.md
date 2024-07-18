@@ -33,7 +33,7 @@ Output file: gaid.npy (Matrix of parameter grid)
 
 **examples**
 
-signal file: signal_1.hdf5
+signal file: signal_1.hdf5 (examples signal)
 read_result_to_figure： read_sesults_*_search.ipynb
 
 
